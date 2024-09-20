@@ -1,14 +1,11 @@
-import MainPage from "./components/mainPage";
 import ColorMapLayout from "./context/ColorMapContext";
 import RootDirLayout from "./context/RootDirContext";
+import dynamic from "next/dynamic";
 
-export async function generateStaticParams() {
-  const posts = await fetch('/project').then((res) => res.json())
-
-  return posts.map((post:any) => ({
-    porjectName: post.porjectName,
-  }))
-}
+const MainPage = dynamic(
+  () => import("@/app/(home)/project/[projectName]/components/mainPage"),
+  { ssr: false }
+);
 
 export default async function Page({
   params,
