@@ -1,15 +1,14 @@
 import MainPage from "./components/mainPage";
 import ColorMapLayout from "./context/ColorMapContext";
 import RootDirLayout from "./context/RootDirContext";
-import { headers } from "next/headers";
 
+// TODO
 export async function generateStaticParams() {
-  const url=headers().get("x-forwarded-host");
-  const posts = await fetch(url+'/project').then((res) => res.json())
+  const posts = ["test1", "test2", "test3"];
 
-  return posts.map((post:any) => ({
+  return posts.map((post: any) => ({
     projectName: post.projectName,
-  }))
+  }));
 }
 
 export default async function Page({
