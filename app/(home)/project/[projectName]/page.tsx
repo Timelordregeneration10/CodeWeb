@@ -7,7 +7,7 @@ export async function generateStaticParams() {
   const posts = ["test1", "test2", "test3"];
 
   return posts.map((post: any) => ({
-    projectName: post.projectName,
+    projectName: post,
   }));
 }
 
