@@ -8,7 +8,7 @@ export default async function Layout({
 }: {
     children: React.ReactNode;
 }) {
-    const userInfo = await serverGetUserInfo();
+    // const userInfo = await serverGetUserInfo();
     // if (!userInfo) {
     //     redirect("/login");
     // }
