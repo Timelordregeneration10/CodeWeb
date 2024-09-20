@@ -3,7 +3,11 @@ import ColorMapLayout from "./context/ColorMapContext";
 import RootDirLayout from "./context/RootDirContext";
 
 export async function generateStaticParams() {
-  return [];
+  const posts = await fetch('https://.../project').then((res) => res.json())
+
+  return posts.map((post:any) => ({
+    porjectName: post.porjectName,
+  }))
 }
 
 export default async function Page({
