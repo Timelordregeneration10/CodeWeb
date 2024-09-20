@@ -3,7 +3,7 @@ import ColorMapLayout from "./context/ColorMapContext";
 import RootDirLayout from "./context/RootDirContext";
 
 export async function generateStaticParams() {
-  const posts = await fetch('https://.../project').then((res) => res.json())
+  const posts = await fetch('https://timelordregeneration10.github.io/CodeWeb/project').then((res) => res.json())
 
   return posts.map((post:any) => ({
     porjectName: post.porjectName,
