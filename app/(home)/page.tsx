@@ -20,7 +20,7 @@ export default async function Home() {
       <div className="w-full max-w-xl h-[600px] no-scrollbar overflow-scroll flex flex-col items-center gap-8">
         {projectList.map((project: string) => (
           <a
-            href={`/project/${project}`}
+            href={`/CodeWeb/project/${project}`}
             key={project}
             className="w-full min-h-28 bg-white hover:opacity-70 transition-opacity rounded-lg shadow-md flex justify-center items-center cursor-pointer"
           >

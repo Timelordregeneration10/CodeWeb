@@ -76,7 +76,7 @@ async function logoutClicked() {
     localStorage.removeItem("cvwebuserInfo");
     localStorage.removeItem("cvwebAuthorization");
   }
-  window.location.href = "/";
+  window.location.href = "/CodeWeb";
 }
 
 export { logoutClicked, signUpClicked, signInClicked };

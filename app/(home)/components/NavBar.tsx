@@ -87,7 +87,7 @@ export default function NavBar({
         <div className="min-w-[136px] flex flex-col gap-2">
           <div
             className="w-full flex gap-2 text-lg items-center cursor-pointer py-2"
-            onClick={() => router.push("/")}
+            onClick={() => router.push("/CodeWeb")}
           >
             <span className="font-bold animate-brand">Code-WEB</span>
           </div>
@@ -103,7 +103,7 @@ export default function NavBar({
         <div className="min-w-[136px] flex flex-col gap-2">
           <div
             className="w-full flex gap-2 text-md items-center cursor-pointer p-2 bg-[#33333322] hover:bg-[#33333377] transition-background rounded-lg"
-            onClick={() => router.push("/")}
+            onClick={() => router.push("/CodeWeb")}
           >
             <FiLogOut />
             <span>退出项目</span>
