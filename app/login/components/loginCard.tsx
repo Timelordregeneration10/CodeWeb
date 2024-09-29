@@ -26,7 +26,7 @@ const LoginCard = () => {
         setIsLoading(true);
         let success = await signInClicked(userName, password);
         if (success) {
-            router.push("/CodeWeb");
+            router.push("/");
         }
         setIsLoading(false);
     };
