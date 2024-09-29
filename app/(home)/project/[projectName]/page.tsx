@@ -3,6 +3,8 @@ import ColorMapLayout from "./context/ColorMapContext";
 import RootDirLayout from "./context/RootDirContext";
 
 // TODO
+
+export const dynamicParams = false;
 export async function generateStaticParams() {
   return [];
 }
