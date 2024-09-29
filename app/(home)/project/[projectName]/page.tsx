@@ -4,11 +4,7 @@ import RootDirLayout from "./context/RootDirContext";
 
 // TODO
 export async function generateStaticParams() {
-  const posts = ["test1", "test2", "test3"];
-
-  return posts.map((post: any) => ({
-    projectName: post,
-  }));
+  return [];
 }
 
 export default async function Page({
